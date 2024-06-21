@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -37,12 +36,4 @@ func isValid(position []int, dist int, m int) bool {
 	}
 
 	return m <= balls_placed
-}
-
-func main() {
-	case1 := maxDistance([]int{3, 2, 4, 1, 7}, 3)
-	case2 := maxDistance([]int{5, 4, 3, 2, 1, 1000000000}, 2)
-
-	fmt.Printf("Case 1: Expected 3, Got %d\n", case1)
-	fmt.Printf("Case 2: Expected 999999999, Got %d\n", case2)
 }
